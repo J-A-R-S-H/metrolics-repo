@@ -1,0 +1,120 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* main css */
+
+body {
+    background-color: #ffffff;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+        background-color: #25c389;
+        padding: 3rem;
+        padding-top: 6rem;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner { 
+    background-image: url(./media/banner.png);
+    object-fit: cover;
+    object-position: left top;
+    height: 28rem;
+    padding: 1rem;
+}
+
+.banner-text {
+    margin-top: 14rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.banner-text p { 
+    background-color: #ffffff;
+    padding: 1rem;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.intro {
+text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.services {
+    margin-top: 1rem;
+}
+
+.services h2 { 
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.services .ask-us {
+    text-align: center;
+    font-size: 1rem;
+    color: #a3a3a3;
+}
