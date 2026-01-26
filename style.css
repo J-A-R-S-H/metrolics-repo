@@ -114,7 +114,7 @@ text-align: center;
     font-weight: 500;
 }
 
-.services .ask-us {
+.services {
     text-align: center;
     font-size: 1rem;
     color: #a3a3a3;
@@ -129,6 +129,7 @@ h3 {
     margin-top: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
+    text-align: center
 }
 
 .services ul {
@@ -211,3 +212,9 @@ h3 {
 .sample-image-text { 
     font-size: 1.2rem;
 }
+
+.project-layout{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+margin: 1rem;}
