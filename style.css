@@ -108,29 +108,35 @@ text-align: center;
     margin-top: 1rem;
 }
 
-.services h2 { 
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
 
 .services {
     text-align: center;
     font-size: 1rem;
-    color: #a3a3a3;
 }
 
 h2 {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
+    margin-top: 2rem;
 }
 h3 {
     margin-top: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    color: #a3a3a3;
+
+}
+
+h4 { 
+     margin-top: 0.5rem;
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center
 }
+
 
 .services ul {
     display: grid;
