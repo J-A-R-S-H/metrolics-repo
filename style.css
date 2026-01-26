@@ -156,3 +156,58 @@ h3 {
     text-align: center  ;
 }
 
+.music-background-image {
+    background-image: url(./media/music.png);
+    object-fit: cover;
+    object-position: center;
+    height: 20rem;
+    margin-top: 2rem;
+    background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+}
+
+.blog-post-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.top-left {
+    text-align: center;
+    padding: 0.7rem;
+    background-color: #D8605F;
+    color: #ffffff;
+    width: 20%;
+
+}
+
+.date-day {
+    font-size: 1.3rem;
+}
+
+.bottom-text-blog-post{
+    position: relative;
+    background-color: #19B2DE;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.bottom-text-blog-post::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background-color: #1596BD;
+    
+}
+
+.sample-image-text { 
+    font-size: 1.2rem;
+}
