@@ -236,3 +236,23 @@ margin: 1rem;}
     width: 100%;
     object-fit: contain;
 }
+
+.bottom-footer {
+    background-color: #0E2E4E;
+    color: #ffffff;
+    margin-left: -10rem;
+    margin-right: -10rem;
+}
+
+.bottom-footer section {
+    padding: 2rem 10rem;
+}
+
+.circle-image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1rem;
+}
