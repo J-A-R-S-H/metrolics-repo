@@ -222,8 +222,15 @@ h4 {
 .project-layout{ 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-gap: 1.5rem;
+    gap: 1.5rem;
 margin: 1rem;}
+
+.project-layout img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 15rem;
+}
 
 .logo-list {
     display:grid;
@@ -255,4 +262,22 @@ margin: 1rem;}
     object-fit: cover;
     object-position: center;
     margin-bottom: 1rem;
+}
+
+.ceo-section {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+.ceo-desc-wrapper{ 
+    max-width: 60%;
+}
+
+.ceo-desc-wrapper hr {
+    margin-top: 2rem;
+    width: 20%; 
+    float: left;
+    border-color: #FFB901;
+    border-width: 3px;
+    border-style: solid;
 }
