@@ -96,11 +96,23 @@ nav ul li a {
 }
 
 .banner-text p { 
-    background-color: #ffffff;
+    background-color: #EBEBEB;
     padding: 1rem;
     width: fit-content;
     font-weight: 600;
 }
+
+.border-text-left-red {
+    border-left: 4px solid #de6262;
+}
+.border-text-left-blue {
+    border-left: 4px solid #19b2de;
+}
+
+.border-text-left-yellow {
+    border-left: 4px solid #ffb901;
+}
+
 
 .intro {
 text-align: center;
@@ -257,11 +269,17 @@ margin: 1rem;}
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .logo-list img {
     width: 100%;
     object-fit: contain;
+}
+
+.logo-list li {
+    padding: 1.5rem;
+    background-color: #f3f3f3;
 }
 
 .bottom-footer {
@@ -325,3 +343,23 @@ flex-direction: column;
 .line-green {
     border: 1px solid #25C389;
 }
+
+.line-yellow {
+    border: 1px solid #FFB901;
+}
+
+.line-light-blue {
+    border: 1px solid #19B2DE;
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    gap: 1rem;
+    font-size: 2rem;
+margin-bottom: 0.5rem;
+}
+
+.logo-and-title svg {
+margin-bottom: 0.3rem;}
