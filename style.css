@@ -251,7 +251,7 @@ margin: 1rem;}
     margin-right: -10rem;
 }
 
-.bottom-footer section {
+.bottom-footer .ceo-section {
     padding: 2rem 10rem;
 }
 
@@ -280,4 +280,25 @@ margin: 1rem;}
     border-color: #FFB901;
     border-width: 3px;
     border-style: solid;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 1rem;
+    padding: 2rem 10rem;
+
+}
+
+.footer-grid section {
+display: flex;
+flex-direction: column;
+}
+
+.long-line {
+    border-color: #FFB901;
+    border-width: 3px;
+    border-style: solid;
+    width: 90%;
+    
 }
