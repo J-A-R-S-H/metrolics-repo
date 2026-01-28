@@ -279,8 +279,8 @@ margin: 1rem;}
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
+    background-size: 140%;
+    background-position: center top;
     margin-bottom: 1rem;
 }
 
