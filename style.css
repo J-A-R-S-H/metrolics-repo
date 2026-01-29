@@ -354,7 +354,7 @@ margin: 1rem;}
 .footer-grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    column-gap: 1rem;
+    column-gap: 1.5rem;
     padding: 2rem 10rem;
 
 }
@@ -454,4 +454,34 @@ margin-bottom: 0.3rem;}
 .mastadon-text {
         color: #19B2DE;
 
+}
+/* 
+only  css solution 
+h4 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #25c389;
+}
+
+h4::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 0.4rem;
+    transform: translate(-50%, -50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #ffffff; /* white triangle to 'cut out' the line */
+/* }  */
+
+
+.minions-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; 
+}
+
+.minions-gallery img {
+    width: 100%;
 }
