@@ -54,13 +54,11 @@ body {
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
 
 }
 
 nav ul {
-    display: flex;
     list-style-type: none;
 
 }
@@ -68,9 +66,6 @@ nav ul li {
     background-color: #25c389;
     padding: 1rem 2rem ;       
     height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 nav ul li a {
@@ -98,28 +93,17 @@ nav ul li a {
 }
 
 .carousel-btn-left{ 
-    position: absolute; 
-    left: 4rem;
-    top: 50%;
-    bottom: 50%;
-cursor: pointer;
-}
+    cursor: pointer;
+} 
 
 .carousel-btn-right {
-     position: absolute; 
-    right: 4rem;
-    top: 50%;
-    bottom: 50%;
-cursor: pointer;
-}
+    cursor: pointer;
+} 
 
 .banner-text {
     margin-top: 14rem;
     margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-}
+} 
 
 .banner-text p { 
     background-color: #EBEBEB;
@@ -196,10 +180,9 @@ h4 {
 
 
 .services ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1.4rem;
-}
+    --layout-moved: 1;
+    /* layout moved to desktop-only media query */
+}  
 
 .services p {
     margin-top: 1rem;
@@ -208,12 +191,9 @@ h4 {
 }
 
 .services ul li article { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-}
+    --layout-moved: 1;
+    /* layout moved to desktop-only media query */
+}  
 
 
 .blog-posts p { 
@@ -229,17 +209,12 @@ h4 {
     background-size: 100% 100%;
       background-repeat: no-repeat;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-}
+} 
 
 .blog-post-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
     margin-top: 2rem;
-}
+    /* layout moved to desktop-only media query */
+} 
 .top-left {
     text-align: center;
     padding: 0.7rem;
@@ -277,10 +252,9 @@ h4 {
 }
 
 .project-layout{ 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-margin: 1rem;}
+margin: 1rem;
+    /* layout moved to desktop-only media query */
+} 
 
 .project-layout img {
     width: 100%;
@@ -290,12 +264,10 @@ margin: 1rem;}
 }
 
 .logo-list {
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 6rem;
-}
+    /* layout moved to desktop-only media query */
+} 
 
 .logo-list img {
     width: 100%;
@@ -305,20 +277,17 @@ margin: 1rem;}
 .logo-list li {
     padding: 1.5rem;
     background-color: #f3f3f3;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
+    /* layout moved to desktop-only media query */
+}  
 
 .bottom-footer {
     background-color: #0E2E4E;
     color: #ffffff;
     margin-left: -10rem;
     margin-right: -10rem;
-    height: 100vh;
     overflow: hidden;
 
-}
+} 
 
 .bottom-footer .ceo-section {
     padding: 2rem 10rem;
@@ -334,10 +303,9 @@ margin: 1rem;}
 }
 
 .ceo-section {
-    display: flex;
-    align-items: center;
-    column-gap: 2rem;
-}
+    --layout-moved: 1;
+    /* layout moved to desktop-only media query */
+}  
 .ceo-desc-wrapper{ 
     max-width: 60%;
 }
@@ -352,12 +320,10 @@ margin: 1rem;}
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    column-gap: 1.5rem;
     padding: 2rem 10rem;
+    /* layout moved to desktop-only media query */
 
-}
+} 
 
 .footer-grid section {
 display: flex;
@@ -408,13 +374,11 @@ flex-direction: column;
 }
 
 .logo-and-title {
-    display: flex;
-    align-items: flex-end;
     font-weight: 600;
     gap: 1rem;
     font-size: 2rem;
 margin-bottom: 0.5rem;
-}
+} 
 
 .logo-and-title svg {
 margin-bottom: 0.3rem;}
@@ -477,12 +441,9 @@ h4::after {
   */
 
 .minions-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem; 
-}
+    --layout-moved: 1;
+    /* layout moved to desktop-only media query */
+}  
 
 .minions-gallery img {
     width: 100%;
@@ -490,11 +451,10 @@ h4::after {
 
 
 .submit-box {
-    display: flex;
     background-color: #D8605F;
-    justify-content: space-between;
     padding-left: 0.7rem;
-}
+    /* layout moved to desktop-only media query */
+} 
 
 .newsletter-input {
     background: transparent;
@@ -510,7 +470,110 @@ h4::after {
 
 
 .social-media-links {
-display: flex;
-gap: 0.4rem;
 margin-bottom: 1rem;
 }
+
+/* Desktop-only layout rules (min-width: 87.5em = 1400px) */
+@media (min-width: 87.5em) {
+    nav {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .carousel-btn-left {
+        position: absolute; 
+        left: 4rem;
+        top: 50%;
+        bottom: 50%;
+        cursor: pointer;
+    }
+    .carousel-btn-right {
+        position: absolute; 
+        right: 4rem;
+        top: 50%;
+        bottom: 50%;
+        cursor: pointer;
+    }
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .services ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1.4rem;
+    }
+    .services ul li article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .music-background-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .blog-post-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    .project-layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    .logo-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 2rem;
+    }
+    .logo-list li {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .ceo-section {
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        column-gap: 1.5rem;
+    }
+    .logo-and-title {
+        display: flex;
+        align-items: flex-end;
+    }
+    .minions-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .submit-box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom-footer {
+        height: 100vh;
+    }
+    .social-media-links {
+        display: flex;
+        gap: 0.4rem;
+    }
+}
+
+
