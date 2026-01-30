@@ -500,9 +500,17 @@ h4::after {
     background: transparent;
     border: none;
     color: #ffffff;
+        outline: none;
+
 }
 
 .newsletter-input::placeholder {
     color: rgba(255,255,255,0.85);
 }
 
+
+.social-media-links {
+display: flex;
+gap: 0.4rem;
+margin-bottom: 1rem;
+}
