@@ -455,24 +455,26 @@ margin-bottom: 0.3rem;}
         color: #19B2DE;
 
 }
-/* 
-only  css solution 
+ 
+/*  Pure CSS Solution for the line if Wim really wants it. 
+
 h4 {
     padding-bottom: 1rem;
     border-bottom: 2px solid #25c389;
+    position: relative;
 }
 
 h4::after {
     content: "";
     position: absolute;
     left: 10%;
-    top: 0.4rem;
+    top: 2.7rem;
     transform: translate(-50%, -50%);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 12px solid #ffffff; /* white triangle to 'cut out' the line */
-/* }  */
-
+    border-top: 12px solid #25C389;     
+}
+  */
 
 .minions-gallery {
     display: grid;
@@ -485,3 +487,22 @@ h4::after {
 .minions-gallery img {
     width: 100%;
 }
+
+
+.submit-box {
+    display: flex;
+    background-color: #D8605F;
+    justify-content: space-between;
+    padding-left: 0.7rem;
+}
+
+.newsletter-input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255,255,255,0.85);
+}
+
