@@ -260,6 +260,10 @@ h4 {
     font-size: 1.2rem;
 }
 
+.ceo-section {
+margin-top: 2rem;
+}
+
 #quo-vadis {
     display: none;
 }
@@ -507,8 +511,121 @@ margin-bottom: 1rem;
     height: 60rem;
 }
 
+
+
+
+
+@media (min-width: 39.5em) {
+.full-bg{ 
+    display: block;
+
+}
+.carousel-btn-left {
+    display: none;
+}
+.carousel-btn-right{ 
+    display: none;
+}
+
+
+.banner { 
+    object-position: center center;
+    background-size: 170%;
+    background-repeat: no-repeat;
+    height: 19rem;
+}
+
+.banner-text { 
+    margin-top: 8rem;
+}
+
+nav ul {
+    display: flex;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web-sol-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#quo-vadis {
+    display: block;
+}
+
+.logo-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.logo-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-post-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.first-item-blog {
+    grid-column: span 2;
+}
+
+.project-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-layout img {
+
+    width: 100%;
+}
+
+.footer-grid .about-section {
+    display: block;
+}
+
+.footer-grid  .gallery-section {
+    display: block;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.minions-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+
+}
+
+
+
 /* Desktop-only layout rules (min-width: 87.5em = 1400px) */
-@media (min-width: 87.5em) {
+@media (min-width: 85.375em ) {
+     .carousel-btn-left,
+  .carousel-btn-right {
+    display: block; /* override the earlier display:none */
+  }
     body {
     padding-left: 10rem;
     padding-right: 10rem;
@@ -539,6 +656,11 @@ margin-bottom: 1rem;
         bottom: 50%;
         cursor: pointer;
     }
+
+    .banner { 
+        height: 33rem;
+    }
+    
     .banner-text {
         display: flex;
         flex-direction: column;
@@ -561,6 +683,12 @@ margin-bottom: 1rem;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
     }
+
+    .first-item-blog {
+        grid-column: span 1;
+    }
+
+
     .project-layout {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -663,5 +791,3 @@ padding: 2rem 10rem;
     width: 20%;
 }
 }
-
-
