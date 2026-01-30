@@ -56,11 +56,6 @@ body {
 
 }
 
-nav {
-    justify-content: space-between;
-
-}
-
 nav ul {
     list-style-type: none;
     display: none;
@@ -790,4 +785,12 @@ padding: 2rem 10rem;
 .ceo-desc-wrapper hr {
     width: 20%;
 }
+
+
+nav {
+    flex-direction: row ;
+    justify-content: space-between;
+}
+
+
 }
